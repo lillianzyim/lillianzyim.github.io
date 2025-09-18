@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* change style of unvisited links */
+        a:link {
+            color: red;
+            text-decoration: none;
+            
+        }
+        /* change style of visited links */
+        a:visited {
+            color: green;
+        }
+        img {
+            width: 20vw;
+        }
+        /* apply rule when hover over picture */
+        .sticker:hover {
+            box-shadow: 100px 100px 100px green;
+            width: 2%;
+        }
+        /* make the buttonbigger with rounded corners and a dropshadow */
+        #submit {
+            width:27vw;
+            height:27vh;
+            border-radius: 127px;
+            box-shadow:27px 27px 27px orange;
+            font-size:27px;
+        }
+        #submit:active {
+            font-size: 20px;
+        }
+        #shape {
+            /* blue square - default behavior*/
+            width: 400px;
+            height:400px;            
+            background-color: dodgerblue;
+
+        }
+        #shape:active {
+            /* green circle - active behavior */
+            clip-path: circle(50% at 50% 50%);
+            background-color: yellowgreen;
+        }
+        input {
+            width: 40vw;
+            height: 5vh;
+            font-size: 2rem;
+        }
+        input:focus {
+            /* apply rule when the user tabs the input field */
+            background-color: yellow;
+        }
+        #intro:first-letter {
+            font-size: 12rem;
+            font-family: cursive;
+            color: red;
+            /* -8 makes the x value of the shadow go down lol */
+            text-shadow: -14px 12px 7px brown;
+        }
+        p {
+            font-size: 2rem;
+        }
+        /* nth child practice */
+        /* start number 2, interval of 3
+        p:nth-child(3n+2) {
+            background-color: red;
+        } */
+
+        p:nth-child(odd) {
+            background-color: red;
+        }
+        p:nth-child(even) {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- make a link with <a href> -->
+    <!-- <a href="https://www.google.com">click</a> -->
+    <!-- <img class="sticker" src="sticker - Copy.jpg"> -->
+    <!-- <button id="submit">ENTER</button> -->
+    <!-- <div id="shape"></div> -->
+
+    <!-- <span>NAME:</span>
+    <input id="name" type="text"></input>
+    <br>
+    <span>AGE:</span>
+    <input id="age" type="number"></input>
+    <br>
+    <span>GRADE:</span>
+    <input id="grade" type="number"></input>
+    <br>
+    <span>SSN:</span>
+    <input id="ssn" type="number"></input> -->
+
+    <!-- <p id="intro">
+        Kade Kaita does not close his div boxes.
+    </p> -->
+
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+    <p>Four</p>
+    <p>Five</p>
+    <p>Six</p>
+    <p>Seven</p>
+    <p>Eight</p>
+</body>
+</html>

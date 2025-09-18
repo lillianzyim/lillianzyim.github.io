@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes movtext {
+            /* Start the animation at the far left and halfway down */
+            0% {
+                transform: translate(0,0);
+            }
+            /* Move the box to the right */
+            50% {
+                transform: translate(75vw,0px);
+            }
+            /* Return to the start */
+            100% {
+                transform: translate(0,0);
+            }
+        }
+        body {
+            background-color: rgb(54, 176, 17);
+            background-size: cover;
+            overflow: hidden;
+        }
+        #quiz {
+            width:auto;
+            height: auto;
+            /* TO DEAD CENTER A DIV, YOU POSITION IT 50VH AND 50VW, THEN TRANSLATE THE BOX 50% OF THE DIV SIZE*/
+            position: absolute;
+            top: 50vh; /*halfway down the page*/
+            left: 50vw; /*halfway right the page*/
+            transform: translate(-50%, -50%); /*DEAD CENTER DIV BOX, 50% of the DIV SIZE*/
+            font-size: 5rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 1rem;
+            color: white;
+        }
+        #poof {
+            width:75vw;
+            height:100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: movtext;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: rgb(54, 176, 17);
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz">QUIZ TODAY</div>
+    <div id="poof"></div>
+</body>
+</html>
